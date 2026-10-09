@@ -26,18 +26,28 @@ const Footer = ({ theme }) => {
                     <li><a href="#contact-us" className='hover:text-primary'></a>Contact Us</li>
                 </ul>
             </motion.div>
-            <div className='text-gray-600 dark:text-gray-400'>
+            <motion.div
+            initial={{opacity: 0, x: 30}}
+            whileInView={{opacity: 1, x: 0}}
+            transition={{duration: 0.8, delay: 0.2}}
+            viewport={{once: true}}
+            className='text-gray-600 dark:text-gray-400'>
                 <h3 className='font-semibold'>Subscribe to our newsletter</h3>
                 <p className='text-sm mt-2 mb-6'>The Latest news, article, and resource, sent to your inbox weekly</p>
                 <div className='flex gapt-2 text-sm'>
                     <input type='email' placeholder='Enter your email' className='w-full p-3 text-sm outline-none rounded dark:text-gray-200 bg-transparent border border-gray-300 dark:border-gray-500'/>
                     <button className='bg-primary text-white rounded px-6'>Subscribe</button>
                 </div>
-            </div>
+            </motion.div>
         </div>
         <hr className='border-gray-300 dark:border-gray-600 my-6'/>
         {/* footer bottom */}
-        <div className='pb-6 text-sm text-gray-500 flex justify-center sm:justify-center gap-4 flex-wrap'>
+        <motion.div 
+        initial={{opacity: 0, y: 20}}
+        whileInView={{opacity: 1, y: 0}}
+        transition={{duration: 0.8, delay: 0.5}}
+        viewport={{once: true}}
+        className='pb-6 text-sm text-gray-500 flex justify-center sm:justify-center gap-4 flex-wrap'>
             <p>Copyright 2025 &copy; ageny.ai - All right reserved</p>
             <div className='flex items-center justify-between gap-4'>
                 <img src={assets.facebook_icon} alt="" />
@@ -45,7 +55,7 @@ const Footer = ({ theme }) => {
                 <img src={assets.instagram_icon} alt="" />
                 <img src={assets.linkedin_icon} alt="" />
             </div>
-        </div>
+        </motion.div>
     </motion.div>
   )
 }
