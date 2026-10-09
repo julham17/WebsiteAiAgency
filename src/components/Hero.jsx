@@ -31,7 +31,7 @@ const Hero = () => {
       <motion.div
       initial={{opacity: 0, scale: 0.9}}
       whileInView={{opacity: 1, scale: 1}}
-      transition={{duration: 0.6, delay: 2}}
+      transition={{duration: 0.6, delay: 1.5}}
       viewport={{once: true}}
       className='relative'>
         <img src={assets.hero_img} alt="" className='w-full max-w-6xl'/>

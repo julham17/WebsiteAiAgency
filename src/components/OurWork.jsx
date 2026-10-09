@@ -28,7 +28,7 @@ const OurWork = () => {
         whileInView="visible"
         transition={{staggerChildren: 0.2}}
         viewport={{once: true}}
-    id='our-work' className='relative flex flex-col items-center gap-7 px-4 xm:px-12 ls:px-24 xl:px-40 pt-30 text-gray-700 dark:text-white'>
+        id='our-work' className='relative flex flex-col items-center gap-7 px-4 xm:px-12 ls:px-24 xl:px-40 pt-30 text-gray-700 dark:text-white'>
       <Title title='Our Latest Work' desc='From Strategy to execute, we craft digital solutions that move your business forward'/>
       <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl'>
         {
